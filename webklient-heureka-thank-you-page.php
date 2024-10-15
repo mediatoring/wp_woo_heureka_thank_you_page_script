@@ -96,7 +96,7 @@ function heureka_settings_page() {
             submit_button();
             ?>
         </form>
-        <p><?php _e('Naleznete svůj API klíč na', 'webklient-heureka'); ?> <a href="<?php echo esc_url('https://sluzby.heureka.cz/statistics-and-reports/conversion-measurement'); ?>" target="_blank">https://sluzby.heureka.cz/statistics-and-reports/conversion-measurement</a>.</p>
+        <p><?php _e('Svůj API klíč najdete na', 'webklient-heureka'); ?> <a href="<?php echo esc_url('https://sluzby.heureka.cz/statistics-and-reports/conversion-measurement'); ?>" target="_blank">https://sluzby.heureka.cz/statistics-and-reports/conversion-measurement</a>.</p>
     </div>
     <?php
 }
@@ -127,7 +127,7 @@ function heureka_register_settings() {
 function heureka_api_key_field_callback() {
     $heureka_key = get_option('heureka_api_key', '');
     echo '<input type="text" name="heureka_api_key" value="' . esc_attr($heureka_key) . '" size="50">';
-    echo '<p class="description">' . __('Najděte svůj klíč na', 'webklient-heureka') . ' <a href="' . esc_url('https://sluzby.heureka.cz/statistics-and-reports/conversion-measurement') . '" target="_blank">https://sluzby.heureka.cz/statistics-and-reports/conversion-measurement</a>.</p>';
+   
 }
 
 // Přidání odkazu na nastavení na stránku přehledu pluginů
